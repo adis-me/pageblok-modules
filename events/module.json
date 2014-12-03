@@ -1,0 +1,9 @@
+{
+    "name": "Pageblok Events module",
+    "enabled": true,
+    "order": 500,
+    "provider": "Pageblok\\Events\\EventServiceProvider",
+    "alias": {
+        "PBEvent": "Pageblok\\Events\\Facades\\EventFacade"
+    }
+}

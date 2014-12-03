@@ -1,0 +1,6 @@
+{
+    "name": "Pageblok Blog module",
+    "enabled": false,
+    "order": 500,
+    "provider": "\\Pageblok\\Blogs\\BlogServiceProvider"
+}

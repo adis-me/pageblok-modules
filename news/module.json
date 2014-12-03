@@ -1,0 +1,6 @@
+{
+    "name": "Pageblok News module",
+    "enabled": false,
+    "order": 500,
+    "provider": "Pageblok\\News\\NewsServiceProvider"
+}

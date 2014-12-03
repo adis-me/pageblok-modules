@@ -1,0 +1,9 @@
+{
+    "name": "Pageblok Galleries module",
+    "enabled": true,
+    "order": 500,
+    "provider": "Pageblok\\Galleries\\GalleryServiceProvider",
+    "alias": {
+        "Gallery": "Pageblok\\Galleries\\Facades\\GalleryFacade"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Pageblok Products module",
+    "enabled": true,
+    "order": 500,
+    "provider": "Pageblok\\Products\\ProductServiceProvider"
+}

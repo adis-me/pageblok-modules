@@ -1,0 +1,6 @@
+{
+    "name": "Pageblok Users module",
+    "enabled": true,
+    "order": 0,
+    "provider": "Pageblok\\Users\\UserServiceProvider"
+}
