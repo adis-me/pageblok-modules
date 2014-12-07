@@ -20,9 +20,9 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
     public function getByCategory($categoryName, $includedUnpublished = true)
     {
         if ( ! $includedUnpublished ) {
-            return $this->model->where('group', $groupName)->where('published', false)->paginate($this->model->getPageSize());
+            return $this->model->where('group', $categoryName)->where('published', false)->paginate($this->model->getPageSize());
         }
-        return $this->model->where('group', $groupName)->paginate($this->model->getPageSize());
+        return $this->model->where('group', $categoryName)->paginate($this->model->getPageSize());
     }
 
     /**

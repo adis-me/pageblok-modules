@@ -96,7 +96,7 @@ class ProductController extends BaseController
     public function edit($id)
     {
         $this->data = [
-            'templates' => \Pageblok::getTemplates("block"),
+            'templates' => \Pageblok::getTemplates("$this->modelName"),
             'contentTypes' => \Pageblok::getContentTypes(),
             'defaultTemplate' => \Block::getDefaultTemplate(),
         ];
@@ -133,6 +133,4 @@ class ProductController extends BaseController
 
         return parent::update($id);
     }
-
-
 }

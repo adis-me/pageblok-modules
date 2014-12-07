@@ -46,6 +46,17 @@ class Product extends ContentModel
         );
 
     /**
+     * When setting quantity we should update the total price
+     * @param $value
+     */
+    public function setQuantityAttribute($value) {
+
+        $this->attributes['quantity'] = empty($value) ? 0 : $value;
+
+        $this->attributes['totalPrice'] = $value * $this->price;
+    }
+
+    /**
      * @inheritdoc
      */
     public function getPluralModelName()

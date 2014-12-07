@@ -3,6 +3,8 @@
 
 namespace Pageblok\Products\Facades;
 
+use Illuminate\Support\Facades\Facade;
+
 /**
  * Class ProductFacade
  *
